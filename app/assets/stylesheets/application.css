@@ -39,3 +39,7 @@ body > div > div.panel.panel-default > div.panel-header > h4 {
 	font-family: 'Pacifico', cursive;
 	font-size: 18px;
 }
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}

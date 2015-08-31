@@ -6,7 +6,7 @@
 	</div>
 </div>
 	<div class="panel-body">
-		<p>by <%= @blog_post.user.email %> </p>
+		<p>by <%= @blog_post.user.username %> </p>
 		<p><%= @blog_post.entry %></p>	
 	</div>
 
@@ -22,12 +22,12 @@
 
 <div class="panel panel-default">
 	<div class="panel-header">
-		<h4>Comments</h4>
+		<h4>Comments by Users</h4>
 		<hr>
 	</div>
 	<% @blog_post.comments.each do |comment| %>
 	<div class="panel-body">
-		<p><strong> <%= comment.user.email %> </strong></p>
+		<p><strong> <%= comment.user.username %> </strong></p>
 		<p><strong><%= comment.created_at.strftime('%m/%d/%Y at %H:%M:%S') %></strong></p>
 		<p> <%= comment.comment_entry %> </p>
 	</div>

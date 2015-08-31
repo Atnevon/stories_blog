@@ -21,7 +21,7 @@
     <%= f.text_area :entry, class: "form-control", placeholder: "Speak your mind and talk to the world", :rows => 20 %>
   </div>
   <div class='form-group cant-see-me'>
-    <% f.number_field :user_id, value: current_user.id %>
+    <%= f.number_field :user_id, value: current_user.id %>
   </div>
   <div class="actions">
     <%= f.submit class: "btn btn-primary" %>

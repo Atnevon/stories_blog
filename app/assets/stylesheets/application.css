@@ -52,4 +52,9 @@ p {
 
 #bs-example-navbar-collapse-1 > ul > a {
 	margin-top: 7px;
+	display: inline-block;
+}
+
+#bs-example-navbar-collapse-1 > ul > div {
+	margin-top: 7px;
 }

@@ -3,6 +3,10 @@ class BlogPostsController < ApplicationController
 
   # GET /blog_posts
   # GET /blog_posts.json
+  def your_posts
+
+  end
+
   def index
     @blog_posts = BlogPost.all
   end

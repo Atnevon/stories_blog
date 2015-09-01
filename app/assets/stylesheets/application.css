@@ -45,16 +45,6 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#myCarousel {
-	height: 575px;
-	margin-bottom: 60px;
-}
-
-#bs-example-navbar-collapse-1 > ul > a {
-	margin-top: 7px;
-	display: inline-block;
-}
-
-#bs-example-navbar-collapse-1 > ul > div {
+#bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right {
 	margin-top: 7px;
 }

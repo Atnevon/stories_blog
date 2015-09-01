@@ -6,15 +6,98 @@
 
 #cText1 {
 	margin-top: -275px;
-	color: red;
+	color: white;
 	text-align: center;
-	margin-bottom: auto;
+
 	margin-top: center;
 	position:  absolute;
-	margin-left: 35px;
+	margin-left: 150px;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 900;
+	font-size: 65px;
+	text-shadow: 2px 2px 4px #222222;
 
 }
 
 .carousel-indicators {
-	margin-bottom: 50px;
+	margin-top: auto;
+	margin-bottom: -10px;
+}
+
+#cText2 {
+	margin-top: -200px;
+	color: white;
+	text-align: center;
+
+	margin-top: center;
+	position:  absolute;
+	margin-left: 350px;
+	font-size: 24px;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 2px 2px 4px #222222;
+
+}
+
+
+.jumbotron {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: -10px;
+}
+
+/*@media="all" {}
+	.container {
+	    background-color: rgba(255, 255, 255, .8);
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    padding-bottom: 0px;
+	    padding-top: 0px;
+	    border-radius: 0px;
+	}
+}*/
+
+
+
+
+
+@media(max-width: 800px) {
+	#cText1 {
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 1182px) {
+	#cText1 {
+		font-size: 50px;
+	}
+	#cText2 {
+		font-size: 20px;
+		margin-left: 215px;
+	}
+}
+
+@media(max-width: 990px) {
+	#cText1 {
+		font-size: 30px;
+	}
+	#cText2 {
+		font-size: 18px;
+		margin-left: 200px;
+	}
 }

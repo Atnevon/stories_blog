@@ -6,7 +6,7 @@
 	</div>
 </div>
 	<div class="panel-body">
-		<p>by <%= @blog_post.user.username %> </p>
+		<p>by <%= link_to @blog_post.user.username, user_posts_path(id: @blog_post.user.id) %> </p>
 		<p><%= @blog_post.entry %></p>	
 	</div>
 
@@ -27,15 +27,19 @@
 	</div>
 	<% @blog_post.comments.each do |comment| %>
 	<div class="panel-body">
-		<p><strong> <%= comment.user.username %> </strong></p>
+		<p><strong> <%= link_to comment.user.username, user_posts_path(id: comment.user.id) %> </strong></p>
 		<p><strong><%= comment.created_at.strftime('%m/%d/%Y at %H:%M:%S') %></strong></p>
 		<p> <%= comment.comment_entry %> </p>
 	</div>
 	<% end %>
 </div>
 
+<% if current_user.id == @blog_post.user.id %>
+	<%= link_to 'Edit Post', edit_blog_post_path(@blog_post), class: "btn btn-info" %>
+<% end %>
+	<%= link_to 'Back to Stories', blog_posts_path, class: "btn btn-success" %>
+
 
 
 </div>
-<%= link_to 'Edit', edit_blog_post_path(@blog_post), class: "btn btn-info" %> |
-<%= link_to 'Back', blog_posts_path, class: "btn btn-info" %>
+

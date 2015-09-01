@@ -29,6 +29,8 @@ body {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	border-radius: 10px;
+/*	margin-left: 10px;
+	margin-right: 10px;*/
 }
 
 body > div > div.panel.panel-default > div.panel-header > h4 {
@@ -47,4 +49,13 @@ p {
 
 #bs-example-navbar-collapse-1 > ul.nav.navbar-nav.navbar-right {
 	margin-top: 7px;
+}
+
+h1 {
+	margin-left: 10px;
+}
+
+table {
+	margin-left: 10px;
+	margin-right: 10px;
 }

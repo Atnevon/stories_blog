@@ -7,6 +7,10 @@ class BlogPostsController < ApplicationController
 
   end
 
+  def user_posts
+    @user = User.find(params[:id])
+  end
+
   def index
     @blog_posts = BlogPost.all
   end

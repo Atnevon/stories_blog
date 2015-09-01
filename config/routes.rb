@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/about'
 
   get 'your_posts' => 'blog_posts#your_posts'
+  get 'user_posts' => 'blog_posts#user_posts'
 
   resources :comments
   resources :blog_posts

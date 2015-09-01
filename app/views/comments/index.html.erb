@@ -16,9 +16,8 @@
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.user.username %></td>
-        <td><%= comment.comment_entry %></td>
+        <td><%= comment.comment_entry[0..50] %><%= link_to "...  [see original]", comment %></td>
         <td><%= comment.blog_post.title %></td>
-        <td><%= link_to 'Show', comment %></td>
         <!--
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,5 +28,4 @@
 </table>
 
 <br>
-
-<%= link_to 'Return to Stories', blog_posts_path, class:"btn btn-success" %>
+<center><%= link_to 'Return to Stories', blog_posts_path, class:"btn btn-success" %></center>

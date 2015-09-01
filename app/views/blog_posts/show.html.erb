@@ -6,8 +6,8 @@
 	</div>
 </div>
 	<div class="panel-body">
-		<p>by <%= link_to @blog_post.user.username, user_posts_path(id: @blog_post.user.id) %> </p>
-		<p><%= @blog_post.entry %></p>	
+		<p id="postTitle">by <%= link_to @blog_post.user.username, user_posts_path(id: @blog_post.user.id) %> </p>
+		<p><%= simple_format(@blog_post.entry) %></p>	
 	</div>
 
 
